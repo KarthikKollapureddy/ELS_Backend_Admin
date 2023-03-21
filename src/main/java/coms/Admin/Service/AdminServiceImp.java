@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import coms.Admin.DAO.GradeDao;
-import coms.Admin.DAO.RegisterDao;
+import coms.Admin.DAO.RegisterUserDao;
 import coms.Admin.DAO.SubjectDao;
 import coms.Admin.bean.Grades;
 import coms.Admin.bean.Register;
@@ -27,7 +27,7 @@ public class AdminServiceImp implements AdminService {
 	
 	@Autowired SubjectDao subDao;
 	@Autowired GradeDao gradDao;
-	@Autowired RegisterDao registerDao;
+	@Autowired RegisterUserDao registerDao;
 	
 	@Override
 	public Grades insertGrade(Grades grad) throws GradeAlreadyExists {
